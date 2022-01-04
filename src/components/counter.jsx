@@ -12,8 +12,7 @@ class Counter extends React.Component {
     this.handleIncrement = this.handleIncrement.bind(this); //binding the  to the fn
   } */
 
-  handleIncrement = (product) => {
-    console.log(product);
+  handleIncrement = () => {
     this.setState({ value: this.state.value + 1 });
   };
 
