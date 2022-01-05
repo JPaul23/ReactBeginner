@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 //Stateless Functional Component
 //using sfc to create them
-const NavBar = (props) => {
+const NavBar = ({ totalCounters }) => {
+  //destructuring arguments
   return (
     <nav className="navbar navbar-light bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Navbar{" "}
           <span className="badge badge-pill badge-secondary">
-            {props.totalCounters}
+            {totalCounters}
           </span>
         </a>
       </div>
